@@ -1,5 +1,199 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-image: var(--background_image);
+  background-color: var(--background_color);
+  background-size: cover;
+  font-family: "IBM Plex mono", sans-serif;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  padding: 0 10px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
+  max-height: 100vh;
+  max-height: 648px;
+  margin-top: 10px;
+  gap: 68px;
+}
+
+.rec_decor {
+  position: absolute;
+  font-size: var(--main_text_size);
+  text-transform: uppercase;
+  line-height: 139%;
+  text-align: center;
+  color: var(--accent-color);
+  right: 28px;
+}
+
+.header__theme-menu {
+  padding-top: 62px;
+  justify-items: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  gap: 11px;
+  align-items: center;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  background-color: transparent;
+  font-size: var(--main_text_size);
+  text-align: center;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header_info {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.header_info-title {
+  font-size: var(--title_text_size);
+  color: var(--title_text_color);
+  font-weight: var(--text_bold);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 83%;
+}
+
+.header_info-text {
+  color: var(--accent-color_text);
+  font-size: var(--main_text_size);
+  background-color: var(--accent-color);
+  font-weight: var(--text_bold);
+  line-height: 130%;
+}
+
+.main {
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+.main_info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 30px;
+}
+
+.article_title {
+  font-weight: var(--text_bold);
+  font-size: var(--main_text_size);
+  line-height: 130%;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.section_title {
+  font-weight: var(--text_bold);
+  font-size: var(--main_text_size);
+  line-height: 130%;
+  color: var(--accent-color_text);
+  background-color: var(--accent-color);
+}
+
+.section_sub-title {
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+
+.section_text {
+  font-size: var(--main_text_size);
+  color: var(--main_text_color);
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.section_text-link {
+  text-decoration: none;
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.section_title:last-of-type {
+  margin-bottom: 10px;
+}
+
+.section_sub-title {
+  font-size: var(--main_text_size);
+  line-height: 130%;
+  color: var(--accent-color_text);
+  background-color: var(--accent-color);
+}
+
+.main_gallery {
+  margin-top: 28px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 142px 355px 237px 355px 237px;
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 647px;
+  font-size: var(--title_text_size);
+  color: var(--title_text_color);
+  font-weight: var(--text_bold);
+  text-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  right: 0;
+  top: 0;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.red_point::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: #ff0070;
+  box-shadow: 0 0 4px 2px #ff0070;
 }
