@@ -1,18 +1,25 @@
 :root {
- --background_image: url("../images/cover-image-dark.png");
- --background_color: #000028 ;
- --main_text_size: 18px;
- --main_text_color: #F1B2CE;
- --accent-color_text: #000028;
- --title_text_size: 116px;
- --title_text_color: #DB00FF;
- --accent-color: #FF0070;
- --text_regular: 400;
- --text_bold: 700;   
+  --main_text_size: 18px;
+  --title_text_size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --text_regular: 400;
+  --text_bold: 700;
+  --background_image: url("../images/cover-image-dark.png");
+  /* Цвет фона */
+  --background_color: #000028;
+  /* Основной текст в блоках */
+  --main_text_color: #f1b2ce;
+  /* Цвет текста в табличках */
+  --accent-color_text: #000028;
+  /* Тайтал и футер */
+  --title_color: #db00ff;
+  /* Цвет фона табличек */
+  --accent-color: #ff0070;
+  /* Цвет оглавлении, тем разделов */
+  --sub_title: #ff0070;
+  /* Цвет декора и кнопок */
+  --decor_button_color: #ff0070;
+  --border_button: 1px solid rgba(255, 0, 112, 0.4);
 }
- 
-
-
 
 /*
   Переменные для вашего проекта

@@ -5,8 +5,51 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background_image: url("../images/cover-image-light.png");
+  /* Цвет фона */
+  --background_color: #fff1f7;
+  /* Основной текст в блоках */
+  --main_text_color: #353430;
+  /* Цвет текста в табличках */
+  --accent-color_text: #353430;
+  /* Тайтал и футер */
+  --title_color: #ffc2e6;
+  /* Цвет фона табличек */
+  --accent-color: #ff8dcb;
+  /* Цвет оглавлении, тем разделов */
+  --sub_title: #353430;
+  /* Цвет декора и кнопок */
+  --decor_button_color: #353430;
+
+  --border_button: 1px solid rgba(50, 49, 45, 0.4);
+
+  .rec_decor {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background_image: url("../images/cover-image-light.png");
+    /* Цвет фона */
+    --background_color: #fff1f7;
+    /* Основной текст в блоках */
+    --main_text_color: #353430;
+    /* Цвет текста в табличках */
+    --accent-color_text: #353430;
+    /* Тайтал и футер */
+    --title_color: #ffc2e6;
+    /* Цвет фона табличек */
+    --accent-color: #ff8dcb;
+    /* Цвет оглавлении, тем разделов */
+    --sub_title: #353430;
+    /* Цвет декора и кнопок */
+    --decor_button_color: #353430;
+
+    --border_button: 1px solid rgba(50, 49, 45, 0.4);
+
+    .rec_decor {
+      display: none;
+    }
+  }
 }
