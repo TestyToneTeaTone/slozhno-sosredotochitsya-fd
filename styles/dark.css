@@ -22,4 +22,8 @@
   --decor_button_color: #ff0070;
 
   --border_button: 1px solid rgba(255, 0, 112, 0.4);
+
+  .rec_decor {
+      display: block;
+    }
 }
