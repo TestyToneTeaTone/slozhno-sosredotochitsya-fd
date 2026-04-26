@@ -200,10 +200,9 @@
 }
 
 .list_item-link:hover {
-  text-decoration: underline;
-  text-shadow: none;
+  border-bottom: 1px solid var(--main_text_color);
 }
-
+  
 .list_item-link:focus-visible {
   outline: 1px solid var(--main_text_color);
 }
@@ -384,7 +383,7 @@
 
   .section-causes .list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
